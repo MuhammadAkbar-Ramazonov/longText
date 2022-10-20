@@ -1,5 +1,6 @@
 
 var elText = prompt("Istalgan matn kirgazing!");
+var elTitle = document.querySelector(".hero-title");
 
 console.log(elText.split(" "))
 
@@ -13,6 +14,8 @@ for (let index = elText.length - 1; index > 0; index--) {
   }
 
 }
+elTitle.textContent += `Eng katta so'z: ${result}`;
 
 console.log(result);
+
 
